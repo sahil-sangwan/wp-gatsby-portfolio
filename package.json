@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "gatsby": "^5.9.1",
+    "gatsby-plugin-gatsby-cloud": "^5.9.0",
+    "gatsby-plugin-sharp": "^5.9.0",
+    "gatsby-source-wordpress": "^7.9.0",
+    "gatsby-transformer-sharp": "^5.9.0",
+    "html-react-parser": "^3.0.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "clean": "gatsby clean"
+  }
+}
