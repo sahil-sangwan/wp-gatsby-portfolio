@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "@emotion/react": "^11.11.0",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
     "gatsby": "^5.9.1",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-manifest": "^5.3.1",
