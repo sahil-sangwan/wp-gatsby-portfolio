@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import parse from "html-react-parser";
-import Stack from "@mui/material/Stack";
+import styled from 'styled-components';
 
 const Layout = ({ isHomePage, children }) => {
   const {
@@ -50,13 +50,13 @@ const Layout = ({ isHomePage, children }) => {
           </Link>
         )}
       </header>
-      <Stack direction="row" spacing={2}>
+      <MainNav>
         {nodes.map((item, index) => {
           const { label, url } = item;
 
           return <Link to={url}>{label}</Link>;
         })}
-      </Stack>
+      </MainNav>
 
       <main>{children}</main>
 
@@ -70,5 +70,15 @@ const Layout = ({ isHomePage, children }) => {
     </div>
   );
 };
+
+const MainNav = styled.ul`
+  list-style-type: none;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+`
 
 export default Layout;
